@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+  
+body {
+    background-image: url("https://avatars.mds.yandex.net/get-zen_doc/1209300/pub_5b56d7873262f900a93b2379_5b56d80d3a985600a93209a0/scale_1200");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+body .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.titulo-pagina {
+    color: #FFFFFF;
+    font-size: 48px;
+}
+  
+#lb-nomes {
+    color: #FFFFFF;
+    margin: 2% 0 1% 0;
+    font-size: 20px;
+}
+  
+#nomes {
+    width: 40vw;
+    height: 30vh;
+    font-size: 20px;
+}
+  
+#ntimes {
+    margin-top: 5vh;
+    width: 40vw;
+    height: 5vh;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#btn-sortear {
+    margin-top: 5vh;
+    font-size: 18px;
+    width: 17vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+#btn-sortear:hover {
+    background-color:#5cbf2a;
+}
+
+#btn-sortear:active {
+	position:relative;
+	top:1px;
+}
+
+  
+footer{
+    background: #6a040f;
+    font-size: 13px;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+  
+footer a .contato_logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+  
+footer .contato_logo {
+    height: 36px;
+    width: 36px;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.popup-trigger {
+    display: block;
+    width: 170px;
+    right: 2rem;
+    margin: 3em auto;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    padding:1rem 2rem;
+    text-decoration:none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50em;
+    background: #35a785;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+    transition:300ms all;
+}
+  
+.popup-trigger:hover {
+    opacity:.8;
+}
+  
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(94, 110, 141, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition:500ms all;
+}
+  
+.popup.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition:1s all;
+}
+  
+.popup-container {
+    transform:translateY(-50%);
+    transition:500ms all;
+    position: relative;
+    width: 40%;
+    margin: 2em auto;
+    top: 5%;
+    padding:5rem;
+    background: #FFF;
+    border-radius: .25em .25em .4em .4em;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+  
+.is-visible .popup-container {
+    transform:translateY(0);
+    transition:500ms all;
+}
+  
+.popup-container .popup-close {
+    position: absolute;
+    top: 8px;
+    font-size:0;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+}
+  
+.popup-container .popup-close::before,
+.popup-container .popup-close::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 14px;
+    height: 3px;
+    background-color: #b58f8f;
+}
+  
+.popup-container .popup-close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 8px;
+}
+  
+.popup-container .popup-close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 8px;
+}
+  
+  
+.popup-container .popup-close:hover:before,
+.popup-container .popup-close:hover:after {
+    background-color:#e02828;
+    transition:300ms all;
+}
+
+@media(max-width: 574px) {
+    h1 {
+        color: #ff0000;
+    }
+}

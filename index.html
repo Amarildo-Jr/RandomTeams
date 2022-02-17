@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sorteia times</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class='content'>
+      <header>
+        <h1 class="titulo-pagina">Gerador de Times</h1>
+      </header>
+
+      <div class="popup" role="alert">
+        <div class="popup-container">
+          <a href="#0" class="popup-close img-replace">Close</a>
+          <h1>Responsive Popup</h1>
+        </div> 
+      </div> 
+
+      <label for='nomes' id="lb-nomes">Digite um nome por linha:</label>
+      <textarea name='nomes' id='nomes'></textarea>
+      <input type="number" id="ntimes" min="2"></input>
+      <button id='btn-sortear' onclick="sortear()">Sortear</button>
+
+      <footer>
+        <div>
+          <a href='https://github.com/Amarildo-Jr' target="_blank"><img class='contato_logo' src='icons/contato/github.png'></a>
+          <a href='https://www.linkedin.com/in/amarildo-junior/' target="_blank"><img class='contato_logo' src='icons/contato/linkedin.png'></a>
+          <a href='https://www.instagram.com/amorildo.jr/' target="_blank"><img class='contato_logo' src='icons/contato/instagram.png'></a>
+        </div>
+        <p class="copyright">	&copy; Copyright Amarildo Junior - 2021</p>
+      </footer>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</html>

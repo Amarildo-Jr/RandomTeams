@@ -216,7 +216,7 @@ footer p {
 }
 
 @media(max-width: 574px) {
-    h1 {
-        color: #ff0000;
+    footer {
+        background-color: #2600ff;
     }
 }

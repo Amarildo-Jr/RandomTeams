@@ -27,7 +27,7 @@ body .content {
   
 .titulo-pagina {
     color: #FFFFFF;
-    font-size: 48px;
+    font-size: 54px;
 }
   
 #lb-nomes {
@@ -155,6 +155,8 @@ footer p {
     opacity: 1;
     visibility: visible;
     transition:1s all;
+    display: flex;
+    align-items: center;
 }
   
 .popup-container {
@@ -164,7 +166,6 @@ footer p {
     width: 40%;
     height: 36vw;
     margin: 2em auto;
-    top: 5%;
     padding:5rem;
     overflow-y: auto;
     background: #FFF;
@@ -224,4 +225,132 @@ footer p {
 
 #times-sorteados {
     font-size: 18px;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .titulo-pagina {
+        color: #FFFFFF;
+        font-size: 72px;
+    }
+      
+    #lb-nomes {
+        color: #FFFFFF;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        border-radius: 1%;
+        margin: 2% 0 1% 0;
+        font-size: 30px;
+    }
+      
+    #nomes {
+        width: 70vw;
+        height: 40vh;
+        font-size: 30px;
+    }
+      
+    #ntimes {
+        margin-top: 5vh;
+        width: 50vw;
+        height: 5vh;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    
+    #btn-sortear {
+        margin-top: 5vh;
+        font-size: 36px;
+        width: 24vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15vh;
+        background-color:#44c767;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    
+    #btn-sortear:hover {
+        background-color:#5cbf2a;
+    }
+    
+    #btn-sortear:active {
+        position:relative;
+        top:1px;
+    }
+      
+    footer{
+        background: #1b3b16;
+        font-size: 13px;
+        width: 100vw;
+        height: 10vh;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        padding: 20px 0;
+    }
+      
+    footer a .contato_logo:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+      
+    footer .contato_logo {
+        height: 60px;
+        width: 60px;
+        margin: 0 10px;
+    }
+    
+    footer p {
+        margin-top: 10px;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .popup {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1000;
+        width: 100%;
+        background-color: rgba(94, 110, 141, 0.9);
+        opacity: 0;
+        visibility: hidden;
+        transition:500ms all;
+    }
+
+    .titulo-pagina {
+        font-size: 60px;
+    }
+
+    .time-formado {
+        font-size: 35px;
+    }
+
+    .popup-container {
+        transform:translateY(-50%);
+        transition:500ms all;
+        position: relative;
+        width: 60%;
+        height: 110vw;
+        margin: 2em auto;
+        padding:5rem;
+        overflow-y: auto;
+        background: #FFF;
+        border-radius: .25em .25em .4em .4em;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
 }

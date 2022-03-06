@@ -60,7 +60,7 @@ function sortear() {
   }
   const popup = document.getElementById("times-sorteados");
   for(i = 0; i < times.length; i++){
-    const codigo = `<div class='time-formado'><h2>Time` + (i+1) + `: </h2>` + times[i].join("<br>") + `</div>`
+    const codigo = `<div class='time-formado'><h2 style="margin-top: 3%;">Time` + (i+1) + `: </h2>` + times[i].join("<br>") + `</div>`
     popup.innerHTML += codigo
   }
     

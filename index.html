@@ -14,11 +14,12 @@
       <div class="popup" role="alert">
         <div class="popup-container">
           <a href="#0" class="popup-close img-replace">Close</a>
-          <h1>Responsive Popup</h1>
+          <h1 id="titulo-popup">Times sorteados!</h1>
+          <div id="times-sorteados"></div>
         </div> 
       </div> 
 
-      <label for='nomes' id="lb-nomes">Digite um nome por linha:</label>
+      <label for='nomes' id="lb-nomes">Certifique-se de que a lista:<br>&#10062Tenha um nome por linha.<br>&#10062Não possua linhas em branco</label>
       <textarea name='nomes' id='nomes'></textarea>
       <input type="number" id="ntimes" min="2"></input>
       <button id='btn-sortear' onclick="sortear()">Sortear</button>
